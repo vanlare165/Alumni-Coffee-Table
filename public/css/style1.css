@@ -1,0 +1,82 @@
+*{
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  height: 750px; /* Should be removed. Only for demonstration */
+  background: #aaa;
+
+}
+  
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.column.p{
+	font-weight: bold; 
+	color:#031cfc;
+	padding: 20px;
+	font: 18px Arial, sans-serif;
+
+	
+	
+}
+
+.column.h1{
+	
+	border-left-style: solid;
+	border-color: red;
+	font-weight: bold; 
+	padding: 20px;
+	position:left;
+	
+}
+
+.column.h2{
+	
+	border-left-style: solid;
+	border-color: red;
+	font-weight: bold; 
+	padding: 20px;
+
+	
+}
+
+.column.header {
+  padding: 60px;
+  background: #aaa;
+  color: white;
+}
+
+.column.grid-container {
+  display: grid;
+  height: 400px;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.column.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.img{
+    height: 100px;
+    width: 100px;
+}
